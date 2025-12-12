@@ -412,18 +412,20 @@ a {
 }
 
 .thumb {
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 12px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  background: var(--surface);
+  text-align: center; /* centers image horizontally */
 }
 
 .thumb img {
   width: 100%;
-  height: auto;
+  height: auto;       /* keeps full aspect ratio */
   display: block;
-  border-radius: 10px;
 }
+
 .project-meta {
   display: flex;
   justify-content: space-between;
